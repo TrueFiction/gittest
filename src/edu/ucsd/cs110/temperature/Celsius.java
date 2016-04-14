@@ -24,6 +24,6 @@ public class Celsius extends Temperature {
 
     @Override
     public Temperature toFahrenheit(){
-    	return ((super.getValue() * 1.8) + 32));
+    	return ((super.getValue() * 1.8) + 32);
     }
 }
