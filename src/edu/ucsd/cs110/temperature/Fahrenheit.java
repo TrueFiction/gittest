@@ -19,12 +19,12 @@ public class Fahrenheit extends Temperature {
 
     @Override
     public Temperature toCelsius(){
-    	return ((super.getValue() - 32)*(5/9));
+    	return Celsius((super.getValue() - 32)*(5/9));
     }
 
     @Override
     public Temperature toFahrenheit(){
-    	return super.getValue();
+    	return Farenheit(super.getValue());
     }
 }
 
