@@ -37,6 +37,8 @@
     <junit printsummary="on" haltonfailure="yes">
         <classpath>
           <path refid="classpath.test" />
+          <pathelement location="lib/junit-4.11.jar" />
+          <pathelement location="lib/hamcrest-core-1.3.jar" />
           <pathelement location="${test.build.dir}"/>
         </classpath>
         <formatter type="brief" usefile="false" />

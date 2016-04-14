@@ -3,8 +3,8 @@ package edu.ucsd.cs110.tests;
 import edu.ucsd.cs110.temperature.Celsius;
 import edu.ucsd.cs110.temperature.Temperature;
 
+import edu.ucsd.cs110.temperature.Temperature;
 import static org.junit.Assert.assertEquals;
-
 import org.junit.Test;
 
 public class CelsiusTest{
