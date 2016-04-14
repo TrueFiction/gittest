@@ -1,6 +1,7 @@
 package edu.ucsd.cs110.temperature;
 
 import edu.ucsd.cs110.temperature.Temperature;
+import edu.ucsd.cs110.temperature.Celsius;
 
 /**
  * Created by cs110xmatt on 3/11/16.
@@ -16,17 +17,18 @@ public class Fahrenheit extends Temperature {
     public String toString()
     {
         // TODO: Complete this method
-        return "" + super.getValue();
+        return "" + this.getValue() + " F";
     }
 
     @Override
     public Temperature toCelsius(){
-    	return null;//Temperature((super.getValue() - 32)*(5/9));
+    	float z = ((this.getValue() - 32)*(5/9));
+    	return Celsius(z);
     }
 
     @Override
     public Temperature toFahrenheit(){
-    	return null;//Temperature(super.getValue());
+    	return this;//Temperature(super.getValue());
     }
 }
 
