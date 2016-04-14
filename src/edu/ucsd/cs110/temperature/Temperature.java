@@ -4,7 +4,7 @@ package edu.ucsd.cs110.temperature;
  * Created by cs110xmatt on 3/11/16.
  */
 public abstract class Temperature {
-	float value;
+	float value = 0.00f;
     public Temperature(float v)	{
         value = v;
     }
