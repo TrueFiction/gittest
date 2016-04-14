@@ -1,5 +1,7 @@
 package edu.ucsd.cs110.temperature;
 
+import edu.ucsd.cs110.temperature.Temperature;
+
 /**
  * Created by cs110xmatt on 3/11/16.
  */
@@ -24,6 +26,6 @@ public class Celsius extends Temperature {
 
     @Override
     public Temperature toFahrenheit(){
-    	return super((super.getValue() * 1.8) + 32);
+    	return Temperature((super.getValue() * 1.8) + 32);
     }
 }
