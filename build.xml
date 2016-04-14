@@ -8,8 +8,8 @@
   <path id="classpath.base" />
 
   <path id="classpath.test">
-    <pathelement location="lib/junit-4.11.jar" />
-    <pathelement location="lib/hamcrest-core-1.3.jar" />
+    <pathelement location="${test.src.dir}/temperature/junit-4.11.jar" />
+    <pathelement location="${test.src.dir}/temperature/hamcrest-core-1.3.jar" />
     <pathelement location="${main.build.dir}"/>
     <path refid="classpath.base" />
   </path>
