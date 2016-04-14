@@ -19,11 +19,11 @@ public class Celsius extends Temperature {
 
     @Override
     public Temperature toCelsius(){
-    	return Celsius(super.getValue());
+    	return Temperature(super.getValue());
     }
 
     @Override
     public Temperature toFahrenheit(){
-    	return Farenheit((super.getValue() * 1.8) + 32);
+    	return Temperature((super.getValue() * 1.8) + 32);
     }
 }
