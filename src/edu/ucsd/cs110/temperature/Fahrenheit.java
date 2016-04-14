@@ -16,17 +16,17 @@ public class Fahrenheit extends Temperature {
     public String toString()
     {
         // TODO: Complete this method
-        return "";
+        return "" + super.getValue();
     }
 
     @Override
     public Temperature toCelsius(){
-    	return Temperature((super.getValue() - 32)*(5/9));
+    	return null;//Temperature((super.getValue() - 32)*(5/9));
     }
 
     @Override
     public Temperature toFahrenheit(){
-    	return Temperature(super.getValue());
+    	return null;//Temperature(super.getValue());
     }
 }
 
