@@ -17,9 +17,9 @@ public class Celsius extends Temperature {
             return "";
         }
 
-        @Override
-    public Temperature toCelsius(return null;);
+    @Override
+    public Temperature toCelsius(){return null;}
 
     @Override
-    public Temperature toFahrenheit(return null;);
+    public Temperature toFahrenheit(){return null;}
 }
