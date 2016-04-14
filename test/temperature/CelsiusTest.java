@@ -1,10 +1,11 @@
-package edu.ucsd.cs110.tests;
+package temperature;
+
+import static org.junit.Assert.assertEquals;
+
+import org.junit.Test;
 
 import edu.ucsd.cs110.temperature.Celsius;
 import edu.ucsd.cs110.temperature.Temperature;
-
-import edu.ucsd.cs110.lib.junit.Test;
-import static edu.ucsd.cs110.lib.junit.Assert.assertEquals;
 
 public class CelsiusTest{
     private float delta = 0.001f;

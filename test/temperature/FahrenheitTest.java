@@ -1,11 +1,11 @@
 package temperature;
 
-import edu.ucsd.cs110.temperature.Fahrenheit;
-import edu.ucsd.cs110.temperature.Temperature;
-
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
+
+import edu.ucsd.cs110.temperature.Fahrenheit;
+import edu.ucsd.cs110.temperature.Temperature;
 
 public class FahrenheitTest {
     private float delta = 0.001f;
