@@ -5,3 +5,4 @@
 '''
 Code block for commands you may want users to type in README
 '''
+hi
