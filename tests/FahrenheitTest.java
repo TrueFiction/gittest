@@ -1,32 +1,32 @@
-package edu.ucsd.cs110.tests;
+package TestSuite;
 
-import edu.ucsd.cs110.temperature.Celsius;
+import edu.ucsd.cs110.temperature.Fahrenheit;
 import edu.ucsd.cs110.temperature.Temperature;
 
-import edu.ucsd.cs110.temperature.Temperature;
 import static org.junit.Assert.assertEquals;
+
 import org.junit.Test;
 
-public class CelsiusTest{
+public class FahrenheitTest {
     private float delta = 0.001f;
-
+	
     @Test
-    public void testCelsius(){
+    public void testFahrenheit(){
         float value = 12.34f;
-        Celsius temp = new Celsius(value);
+        Fahrenheit temp = new Fahrenheit(value);
 
         assertEquals(value, temp.getValue(), delta);
     }
 
     @Test
-    public void testCelsiusToString(){
+    public void testFahrenheitToString(){
         float value = 12.34f;
 
-        Celsius temp = new Celsius(value);
+        Fahrenheit temp = new Fahrenheit(value);
         String string = temp.toString();
 
         String beginning = "" + value;
-        String ending = " C";
+        String ending = " F";
 
         // Verify the suffix of the formatted string
         assertTrue(string.startsWith(beginning));
@@ -42,23 +42,24 @@ public class CelsiusTest{
     }
 
     @Test
-    public void testCelsiusToCelsius()
+    public void testFahrenheitToFahrenheit()
     {
-        Celsius temp = new Celsius(0);
-        Temperature convert = temp.toCelsius();
-        assertEquals(0, convert.getValue(), delta);
-    }
-
-    @Test
-    public void testCelsiusToFahrenheit(){
-        Celsius temp = new Celsius(0);
+        Fahrenheit temp = new Fahrenheit(32);
 
         Temperature convert = temp.toFahrenheit();
         assertEquals(32, convert.getValue(), delta);
+    }
 
-        temp = new Celsius(100);
-        convert = temp.toFahrenheit();
+    @Test
+    public void testFahrenheitToCelsius(){
+        Fahrenheit temp = new Fahrenheit(32);
 
-        assertEquals(212, convert.getValue(), delta);
+        Temperature convert = temp.toCelsius();
+        assertEquals(0, convert.getValue(), delta);
+
+        temp = new Fahrenheit(212);
+        convert = temp.toCelsius();
+
+        assertEquals(100, convert.getValue(), delta);
     }
 }
