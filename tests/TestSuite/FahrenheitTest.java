@@ -1,4 +1,4 @@
-package edu.ucsd.cs110.tests;
+package TestSuite;
 
 import edu.ucsd.cs110.temperature.Fahrenheit;
 import edu.ucsd.cs110.temperature.Temperature;
