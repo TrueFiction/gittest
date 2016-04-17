@@ -4,9 +4,6 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-import edu.ucsd.cs110.temperature.Celsius;
-import edu.ucsd.cs110.temperature.Temperature;
-
 public class CelsiusTest {
     private float delta = 0.001f;
 
